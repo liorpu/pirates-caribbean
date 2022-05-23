@@ -1,0 +1,22 @@
+version: '2.2'
+services:
+  app:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+    volumes:
+      - .:/app
+    depends_on:
+      - localhost
+  
+  localhost:
+    image: mysql:8.0
+    environment:
+      - MYSQL_DATABASE=piratesCaribbean
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=sababa@1
+      - MYSQL_ROOT_PASSWORD=sababa@1
+
+

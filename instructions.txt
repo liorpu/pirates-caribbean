@@ -1,0 +1,52 @@
+Home Exercise – Full Stack
+
+Background
+Hey there! Welcome to your first step towards being part of Pierate’s initial team!
+If you’re reading this, you’re probably interested in the Full Stack Developer position,
+so we’ve prepared a home assignment to have a first assessment of your capabilities.
+Because our team is still very small, it’s important for everyone to be independent
+and be able to learn whatever is required, so this exercise will require to do a bit
+of everything.
+
+This exercise will ensure you are capable in the following:
+React
+Node.js
+Relational DBs
+Basic UI/UX sense
+
+Assignment
+
+Using react, node.js and some relational database of your choice,
+you are required to develop a
+UI for admins. You’ll have to develop 3 pages:
+1. Admin login page
+2. Admin - Users’ management page
+a. Manage a user’s permissions
+b. Reset its password
+c. Browse the Users page (described in next bullet) as some selected user
+3. Users page, where he can do one OR MORE of the following, based on his permissions:
+a. Manage a to-do list
+b. Save contacts (name and phone number is enough, no need to edit)
+c. Manage a pros/cons table
+
+UI/UX-wise, you’re free to implement the pages as you like,
+but keep in mind that it should make sense and be intuitive for the user.
+
+Bonus:
+1. For the DB, if you decide to use a docker, please submit a file with
+the docker command to run the DB container (don’t forget to expose the ports).
+2. If you want to containerize the whole app, we won’t object
+
+Submission
+Either .zip file or a link to a Git repository.
+
+Submission must include:
+ Codebase
+ Some textual explanation of which DB was used
+ DDLs of all tables in the DB
+
+As explained in the previous part, you can also containerize the whole app. If you do so, please
+provide us with a link to the image, and make sure it’s public.
+Note that the assignment will be graded on code design, DB design and how intuitive the pages
+are.
+Good Luck!

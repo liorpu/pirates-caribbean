@@ -1,0 +1,39 @@
+CREATE TABLE `contacts` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user` tinytext NOT NULL,
+  `contactName` tinytext NOT NULL,
+  `contactPhone` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `prosCons` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user` tinytext NOT NULL,
+  `proConValue` text NOT NULL,
+  `proConType` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `ToDoList` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user` tinytext NOT NULL,
+  `task` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=129 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user` tinytext NOT NULL,
+  `password` tinytext NOT NULL,
+  `ToDoList` tinyint(1) NOT NULL,
+  `contacts` tinyint(1) NOT NULL,
+  `proscons` tinyint(1) NOT NULL,
+  `admin` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+**** In the users table you need to create an Admin user,
+with a password of your choice.
